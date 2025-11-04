@@ -102,5 +102,15 @@ function isleap(year)
 end
 
 function chesscolor(cell1, cell2)
+    cell_1_row = cell1[1] - 'a' + 1;
+    cell_1_column = cell1[2];
+
+    cell_2_row = cell2[1] - 'a' + 1;
+    cell_2_column = cell2[2];
+
+    if ((cell_1_row + cell_1_column + cell_2_row + cell_2_column) % 2) == 0
+        return true;
+    end
+
     return false;
 end
