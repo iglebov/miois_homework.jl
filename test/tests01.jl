@@ -1,4 +1,3 @@
-
 @testset "getdigits" begin
     @test getdigits(1234) == [1, 2, 3, 4];
     @test getdigits(0123) == [1, 2, 3];
@@ -40,5 +39,4 @@ end
     @test isleap(2000) == true;
     @test isleap(2019) == false;
     @test isleap(1800) == false;
-
 end

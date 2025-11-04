@@ -1,3 +1,5 @@
+export arraysum, mul35sum
+
 function arraysum(ar::AbstractVector{<:Number})::Float64
     sum = 0;
 
